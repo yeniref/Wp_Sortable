@@ -1,7 +1,12 @@
 # Wp_Sortable
 Wordpress sortable özel alan örneği
 
-Frontend kodu
+Backend
+
+require_once get_template_directory() . '/Wp_Sortable/dragdrop-metabox.php';
+
+
+Frontend
 
 < ? php
 $ozel_alan_seti = get_post_meta($post->ID, 'ozel_alan_seti', true);
