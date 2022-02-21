@@ -51,7 +51,7 @@ function fixdragdrop_item_order($post_array){
 /**
  * Save the data
  */
-add_action('save_post_page', function($post_id, $post){
+add_action('save_post_post', function($post_id, $post){
 	if($post->post_status != 'auto-draft' && $post->post_status != 'trash'){
 		if(isset($_POST['ozel_alan_seti']) && !empty($_POST['ozel_alan_seti'])){
 			$metavalue = fixdragdrop_item_order($_POST['ozel_alan_seti']);
